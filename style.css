@@ -1,0 +1,55 @@
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background: #F5F8FF;
+    font-family: "Raleway", sans-serif;
+}
+
+header{
+    padding:0 112px;
+    z-index: 100!important;
+}
+section{
+    padding:0 112px;
+}
+
+.containers{
+    width: 100%;
+    margin: auto;
+}
+
+
+.bgtrans{
+    background:url('./assest/herovector.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1!important;
+}
+.interfont{
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
+
+
+/*footer css here */
+.footer{
+    background:url('./assest/footerbg.png');
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+    padding-bottom: 112px;
+}
+.footer-icon-opacity{
+    opacity: .30;
+}
+
+.footer-wrper{
+    padding:0 112px;
+}
