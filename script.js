@@ -10,3 +10,20 @@ function toggleFaq(index) {
     }
 }
 
+
+
+
+//header sectinn js code
+let header = document.querySelector("#header");
+
+window.addEventListener('scroll', (e) => {
+    const hight = scrollY;
+    if (hight > 150) {
+        header.style.background = "white";
+        header.style.borderBottom = "1px solid #E4EAF8";
+        header.style.transition = "background .6s";
+    } else {
+        header.style.background = "transparent";
+        header.style.borderBottom = "none";
+    }
+});

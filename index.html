@@ -25,17 +25,17 @@
 <body>
 
     <!-- header section start from here -->
-    <header class="fixed top-0 w-full">
+    <header id="header" class="fixed top-0 w-full">
         <div class='containers'>
             <div class="flex items-center justify-between">
                 <div>
-                    <div class='mt-[31px]'>
+                    <div class='my-[31px]'>
                         <img class="w-[170px] h-[37.29px]" src="./assest/logo.png" alt="logo">
                     </div>
                 </div>
-                <div>
+                <div class="hidden lg:block">
                     <div
-                        class="w-[499px] border mt-[16px] border border-[#FFFFFF] rounded-[20px] h-[68px] rounded-[20px] bg-[#ffffff] p-[24px]">
+                        class="w-[499px] border my-[16px] border border-[#FFFFFF] rounded-[20px] h-[68px] rounded-[20px] bg-[#ffffff] p-[24px]">
                         <ul class="flex items-center justify-between px-10 text-gray-900">
                             <li class="text-[#252432] font-[700] text-[16px] interfont">Home</li>
                             <li class="text-[#8987A1] font-[400] text-[16px] interfont">About</li>
@@ -44,11 +44,21 @@
                         </ul>
                     </div>
                 </div>
-                <div class="flex mt-[26px] items-center gap-5">
+                <div class="hidden lg:flex flex my-[26px] items-center gap-5">
                     <span class="text-[#8987A1] font-[400] text-[16px]">Sign In</span>
                     <button
                         class="bg-[#4E47FF] font-[700] text-[16px] py-[8px] px-[20px] text-white w-[132 h-[48px] rounded-[10px]">Sign
                         Up</button>
+                </div>
+
+                <div class="lg:hidden my-[26px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer" viewBox="0 0 100 80" width="40"
+                        height="30">
+                        <rect width="75" height="8" rx="8"></rect>
+                        <rect y="30" width="75" height="8" rx="8"></rect>
+                        <rect y="60" width="75" height="8" rx="8"></rect>
+                    </svg>
+
                 </div>
             </div>
         </div>
@@ -77,47 +87,52 @@
                 <h1 class="font-[700] text-[60px] text-[#252432] leading-[72px]">
                     What We do
                 </h1>
-                <div class="mt-[32px] grid grid-cols-12 grid-rows-6 gap-[30px] mb-20">
-                    <div class="col-span-3 row-span-3 w-full h-[252px] p-[20px] rounded-[10px] bg-white">
+                <div
+                    class="mt-[32px] grid grid-cols-12 grid-rows-8 md:grid-rows-12 gap-[18px] md:gap-[20px] lg:gap-[30px] mb-20">
+                    <div
+                        class="col-span-12 row-span-1 md:col-span-4 md:row-span-3 lg:col-span-3 lg:row-span-6 w-full h-[252px] p-[20px] rounded-[10px] bg-white">
                         <div class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px]">
                             <img class="w-[13.86px] h-[16px]" src="./assest/doone.png" alt="what we do icon">
                         </div>
                         <div class="mt-[19px]">
                             <h3 class="pb-[20px] text-[#252432] font-[600] text-[19.77px] leading-[23.73px] interfont">
                                 Web Design</h3>
-                            <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont">
+                            <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont line-clamp-4">
                                 From concept to launch, we create stunning, user-centric websites that elevate your
                                 brand and engage your audience.
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-3 row-span-3 w-full h-[252px] p-[20px] rounded-[10px] bg-white">
+                    <div
+                        class="col-span-12 row-span-1 md:col-span-4 md:row-span-3 lg:col-span-3 lg:row-span-6 w-full h-[252px] p-[20px] rounded-[10px] bg-white">
                         <div class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px]">
                             <img class="w-[16.98px] h-[16.35px]" src="./assest/dotwo.png" alt="what we do icon">
                         </div>
                         <div class="mt-[19px]">
                             <h3 class="pb-[20px] text-[#252432] font-[600] text-[19.77px] leading-[23.73px] interfont">
                                 UI/UX Design</h3>
-                            <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont">
+                            <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont line-clamp-4">
                                 From concept to launch, we create stunning, user-centric websites that elevate your
                                 brand and engage your audience.
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-3 row-span-3 w-full h-[252px] p-[20px] rounded-[10px] bg-white">
+                    <div
+                        class="col-span-12 row-span-1 md:col-span-4 md:row-span-3 lg:col-span-3 lg:row-span-6 w-full h-[252px] p-[20px] rounded-[10px] bg-white">
                         <div class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px]">
                             <img class="w-[18px] h-[18px]" src="./assest/dothree.png" alt="what we do icon">
                         </div>
                         <div class="mt-[19px]">
                             <h3 class="pb-[20px] text-[#252432] font-[600] text-[19.77px] leading-[23.73px] interfont">
                                 Responsive Design</h3>
-                            <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont">
+                            <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont line-clamp-4">
                                 From concept to launch, we create stunning, user-centric websites that elevate your
                                 brand and engage your audience.
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-3 row-span-6 w-full h-[534px] rounded-[10px] bg-white  flex flex-col">
+                    <div
+                        class="col-span-12 row-span-2 md:col-span-6 md:row-span-6 lg:col-span-3 lg:row-span-12 w-full h-[534px] rounded-[10px] bg-white  flex flex-col justify-between">
                         <div class="p-[20px] pb-[25px] h-fit">
                             <div class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px]">
                                 <img class="w-[19.02px] h-[19.05px]" src="./assest/dofour.png" alt="what we do icon">
@@ -126,7 +141,7 @@
                                 <h3
                                     class="pb-[20px] text-[#252432] font-[600] text-[19.77px] leading-[23.73px] interfont">
                                     E-commerce Solutions</h3>
-                                <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont">
+                                <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont line-clamp-4">
                                     From concept to launch, we create stunning, user-centric websites that elevate your
                                     brand and engage your audience.
                                 </p>
@@ -138,8 +153,9 @@
                         </div>
                     </div>
 
-                    <div class="col-span-6 row-span-3 w-full h-[252px] rounded-[10px] bg-white grid grid-cols-12">
-                        <div class="p-[20px] col-span-6">
+                    <div
+                        class="col-span-12 row-span-2 md:col-span-6 md:row-span-6 lg:col-span-6 lg:row-span-6 w-full h-full md:h-full lg:h-[252px] rounded-[10px] bg-white grid grid-cols-12">
+                        <div class="p-[20px] col-span-12 md:col-span-12 lg:col-span-6">
                             <div class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px]">
                                 <img class="w-[21px] h-[13px]" src="./assest/dofive.png" alt="what we do icon">
                             </div>
@@ -147,27 +163,35 @@
                                 <h3
                                     class="pb-[20px] text-[#252432] font-[600] text-[19.77px] leading-[23.73px] interfont">
                                     Webflow</h3>
-                                <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont">
+                                <p
+                                    class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont  line-clamp-10 md:line-clamp-7 lg:line-clamp-4">
+                                    From concept to launch, we create stunning, user-centric websites that elevate your
+                                    brand and engage your audience.
+
+                                    From concept to launch, we create stunning, user-centric websites that elevate your
+                                    brand and engage your audience.
                                     From concept to launch, we create stunning, user-centric websites that elevate your
                                     brand and engage your audience.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-span-6 p-[18px] flex justify-end w-full">
-                            <div class=" bg-[#5B54FF] w-[225px] flex justify-center items-center rounded-[5px]">
+                        <div class="col-span-12 md:col-span-12 lg:col-span-6 p-[18px] flex justify-end w-full">
+                            <div
+                                class=" bg-[#5B54FF] w-full md:w-full lg:w-[225px] flex justify-center items-center rounded-[5px]">
                                 <img class="w-[91px] h-[59.15px]" src="./assest/webflowdoicon.png"
                                     alt="what we do icon">
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-3 row-span-3 w-full h-[252px] p-[20px] rounded-[10px] bg-white">
+                    <div
+                        class="col-span-12 row-span-1 md:col-span-12 md:row-span-3 lg:col-span-3 lg:row-span-6 w-full h-[252px] p-[20px] rounded-[10px] bg-white">
                         <div class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px]">
                             <img class="w-[18px] h-[18px]" src="./assest/dosix.png" alt="what we do icon">
                         </div>
                         <div class="mt-[19px]">
                             <h3 class="pb-[20px] text-[#252432] font-[600] text-[19.77px] leading-[23.73px] interfont">
                                 Custom Development</h3>
-                            <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont">
+                            <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] interfont line-clamp-4">
                                 From concept to launch, we create stunning, user-centric websites that elevate your
                                 brand and engage your audience.
                             </p>
@@ -209,7 +233,7 @@
 
     <!-- pricing section start from here -->
     <section class="containers py-[200px]">
-        <div class="flex gap-[30px] justify-between">
+        <div class="flex flex-col xl:flex-row gap-[30px] justify-between">
             <div class="w-full flex flex-col justify-between items-center">
                 <div class="flex flex-col gap-10 w-full h-full justify-between">
                     <div class="pt-[20px]">
@@ -236,7 +260,7 @@
                         class="text-[#252432] font-[400] text-[14px] leading-[25.5px] interfont">Unlimited Services</h3>
                     <p class="font-[400px] text-[14px] leading-[21px] interfont text-[#8987A1] py-[31px]">Take a look at
                         some of our recent projects to see how we've helped businesses like yours succeed online.</p>
-                    <div class="flex justify-between items-center">
+                    <div class="flex flex-col gap-4 md:gap-0 md:flex-row justify-between items-center">
                         <div class="flex flex-col gap-4 w-full">
                             <div class="flex items-center gap-3">
                                 <img class="w-[24px] h-[24px]" src="./assest/tickprice.png" alt="tick-price">
@@ -298,7 +322,7 @@
 
     <!-- faq section start from here -->
     <section class="faq-section">
-        <div class="flex items-center gap-[30px] justify-between">
+        <div class="flex flex-col lg:flex-row items-center gap-[30px] justify-between">
             <div class="w-full flex justify-center items-center">
                 <h2 class="text-[60px] font-[700] leading-[72px] text-[#252432]">Frequently<br /> Asked<br /> Questions
                 </h2>
@@ -414,7 +438,7 @@
         <div class="footer-wrper py-[100px]">
             <!-- <img class="w-[300px] float-right footer-icon-opacity" src="./assest/footer-tube-icon.png" alt="footer-star-icons"> -->
             <h1 class="text-center font-[700] text-[60px] leading-[72px] text-[#252432]">Let's Get in Touch</h1>
-            <form action="#" method="post" class="w-[696px] mt-[71px] m-auto">
+            <form action="#" method="post" class="w-full lg:w-[696px] mt-[71px] m-auto">
                 <div class="form-group w-full flex flex-col">
                     <label for="email"
                         class="text-[#252432] interfont text-[18px] font-[700] leading-[21.8px] pb-[10px]">Email:</label>
@@ -451,15 +475,15 @@
                             <img class="w-[187px] h-[41.02px]" src="./assest/logo.png" alt="logo">
                         </div>
                     </div>
-                    <div class="flex justify-between items-start mt-[38px]">
+                    <div class="flex flex-col lg:flex-row gap-7 lg:gap-0 justify-between items-start mt-[38px]">
                         <div class="w-full">
                             <p class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">
                                 Ready to elevate your online presence? Contact us today to discuss your project and
                                 discover how we can bring your vision to life.
                             </p>
                         </div>
-                        <div class="w-full flex justify-end">
-                            <ul class="flex items-center gap-[48px]">
+                        <div class="w-full flex justify-center lg:justify-end">
+                            <ul class="flex items-center gap-[20px] xl:gap-[48px]">
                                 <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">Home</li>
                                 <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">About</li>
                                 <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">How it works
@@ -470,7 +494,8 @@
                     </div>
 
 
-                    <div class="flex justify-between items-end mt-[38px]">
+                    <div
+                        class="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-end mt-[38px] gap-[30px] md:gap-0">
                         <div class="w-full">
                             <p
                                 class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont flex items-center gap-3">
@@ -484,7 +509,7 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="w-full flex justify-end">
+                        <div class="w-full flex justify-center md:justify-end">
                             <ul class="flex items-end gap-[20px]">
                                 <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">
                                     <div class="bg-[#F5F8FF] w-fit p-[5px] rounded-[9px]">

@@ -1,36 +1,37 @@
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
-body{
+body {
     background: #F5F8FF;
     font-family: "Raleway", sans-serif;
 }
 
-header{
-    padding:0 112px;
-    z-index: 100!important;
-}
-section{
-    padding:0 112px;
+header {
+    padding: 0 112px;
+    z-index: 100 !important;
 }
 
-.containers{
+section {
+    padding: 0 112px;
+}
+
+.containers {
     width: 100%;
     max-width: 1440px;
     margin: auto;
 }
 
 
-.bgtrans{
-    background:url('./assest/herovector.png');
+.bgtrans {
+    background: url('./assest/herovector.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    z-index: -1!important;
+    z-index: -1 !important;
 }
-.interfont{
+
+.interfont {
     font-family: "Inter", sans-serif;
 }
 
@@ -40,17 +41,48 @@ section{
 
 
 /*footer css here */
-.footer{
-    background:url('./assest/footerbg.png');
+.footer {
+    background: url('./assest/footerbg.png');
     background-position: center;
     background-size: cover;
     height: fit-content;
     padding-bottom: 112px;
 }
-.footer-icon-opacity{
+
+.footer-icon-opacity {
     opacity: .30;
 }
 
-.footer-wrper{
-    padding:0 112px;
+.footer-wrper {
+    padding: 0 112px;
+    margin-top: 112px;
+}
+
+
+
+
+@media (max-width:990px) {
+
+    section,
+    header {
+        padding: 0 60px;
+    }
+
+    .footer-wrper {
+        padding: 0 60px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+
+    section,
+    header {
+        padding: 0 40px;
+    }
+
+    .footer-wrper {
+        padding: 0 60px;
+    }
 }
