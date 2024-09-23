@@ -30,7 +30,7 @@
     <header id="header" class="fixed top-0 w-full">
         <div class='containers'>
             <div class="flex items-center justify-between">
-                <div>
+                <div class="">
                     <div class='my-[31px]'>
                         <img class="w-[170px] h-[37.29px]" src="./assest/logo.png" alt="logo">
                     </div>
@@ -122,7 +122,10 @@
     <!-- hero sectionn start from here -->
     <section class="w-sccreen h-screen flex items-center justify-center w-screen bgtrans">
         <div class="w-[764px] flex flex-col items-center">
-            <h1 class="text-center font-[700] text-[73.34px] text-[#252432] leading-[73.34px]">Awesome UI Dark Template
+            <h1
+                class="text-center font-[700] text-[52px] sm:text-[58xp] md:text-[64px] lg:text-[73.34px] text-[#252432] leading-[73.34px]">
+                Awesome
+                UI Dark Template
                 for Webflow Agency</h1>
 
             <button
@@ -137,7 +140,8 @@
     <section class="h-fit">
         <div class="containers">
             <div class="h-fit">
-                <h1 class="font-[700] text-[60px] text-[#252432] leading-[72px]">
+                <h1
+                    class="font-[700] text-[40px] sm:text-[46xp] md:text-[52px] lg:text-[60px] text-[#252432] leading-[72px]">
                     What We do
                 </h1>
                 <div
@@ -262,28 +266,35 @@
     <!-- slider section start from here -->
     <div>
         <section>
-            <div class="flex justify-center items-center gap-[188px]">
+            <div class="flex justify-center items-center gap-[20px] md:gap-[70px] lg:gap-[188px] w-full h-fit relative">
                 <div id="swiper-button-prev"
-                    class="w-[78px] h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] flex justify-center items-center cursor-pointer">
+                    class="hidden w-[55px] h-[55px] md:w-[78px] md:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] md:flex justify-center items-center cursor-pointer">
                     <img class="h-[6px] w-[14px]" src="./assest/leftarrow-work.png" alt="left-arrow-icons">
                 </div>
-                <div class="relative text-center">
-                    <h2 class="font-[700] text-[60px] leading-[72px] text-[#252432]">Check our Work</h2>
+                <div class="text-center">
+                    <h2
+                        class="font-[700] text-[40px] sm:text-[46xp] md:text-[52px] lg:text-[60px] leading-[72px] text-[#252432]">
+                        Check our Work</h2>
                     <p
-                        class="text-[#8987A1] interfont font-[400] text-[14px] leading-[21px] text-center w-[449px] pt-[32px]">
+                        class="text-[#8987A1] interfont font-[400] text-[14px] leading-[21px] text-center pt-[32px] md:w-[449px]">
                         Take
                         a look at
-                        some of our recent projects to see how we've helped businesses like yours succeed online.</p>
-                    <img class="text-center -translate-y-14 absolute top-0 colorBurn" src="./assest/worktitlevector.png"
-                        alt="work-vector">
+                        some of our recent projects to see how we've helped businesses like yours succeed online.
+                    </p>
                 </div>
                 <div id="swiper-button-next"
-                    class="w-[78px] h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] flex justify-center items-center cursor-pointer">
+                    class="hidden md:flex w-[55px] h-[55px] md:w-[78px] md:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] justify-center items-center cursor-pointer">
                     <img class="h-[6px] w-[14px]" src="./assest/rightarraw-work.png" alt="right-arrow-icons">
+                </div>
+
+                <div class="hidden md:flex justify-center absolute top-0">
+                    <img class="md:-translate-y-14 lg:-translate-y-16 xl:-translate-y-28 colorBurn object-cover w-[799px] md:h-[800px] lg:h-[841px]"
+                        src="./assest/worktitlevector.png" alt="work-vector">
                 </div>
             </div>
         </section>
         <div class="bg-[#F5F8FF] h-[518px] mt-[57px]">
+
             <!-- Swiper -->
             <div class="swiper workswoper">
                 <div class="swiper-wrapper">
@@ -338,7 +349,9 @@
             <div class="w-full flex flex-col justify-between items-center">
                 <div class="flex flex-col gap-10 w-full h-full justify-between">
                     <div class="pt-[20px] text-center xl:text-left">
-                        <h2 class="text-[60px] font-[700] leading-[72px] text-[#252432]">Pricing</h2>
+                        <h2
+                            class="text-[40px] sm:text-[46xp] md:text-[52px] lg:text-[60px] font-[700] leading-[72px] text-[#252432]">
+                            Pricing</h2>
                         <p class="text-[#8987A1] font-[400] text-[14px] leading-[21px] pt-[16px]">
                             Take a look at some of our recent projects<br /> to see how we've helped businesses
                             like<br /> yours succeed online.
@@ -426,7 +439,8 @@
 
         <div class="flex flex-col lg:flex-row items-center gap-[30px] justify-between">
             <div class="w-full flex justify-center items-center">
-                <h2 class="text-[60px] font-[700] leading-[72px] text-[#252432] text-center lg:text-left">
+                <h2
+                    class="text-[40px] sm:text-[46xp] md:text-[52px] lg:text-[60px] font-[700] leading-[72px] text-[#252432] text-center lg:text-left">
                     Frequently<br /> Asked<br /> Questions
                 </h2>
                 <img class="absolute hidden lg:block left-0 lg:h-[525px] xl:h-full colorBurn" src="./assest/faqtube.png"
@@ -543,7 +557,9 @@
         <div class="footer-wrper">
             <img class="w-[235px] hidden xl:block absolute right-[112px] h-[218px] float-right colorBurn"
                 src="./assest/footer-tube-icon.png" alt="footer-star-icons">
-            <h1 class="text-center font-[700] text-[60px] leading-[72px] text-[#252432]">Let's Get in Touch
+            <h1
+                class="text-center font-[700] text-[40px] sm:text-[46xp] md:text-[52px] lg:text-[60px] leading-[72px] text-[#252432]">
+                Let's Get in Touch
             </h1>
             <form action="#" method="post" class="w-full lg:w-[696px] mt-[71px] m-auto">
                 <div class="form-group w-full flex flex-col">
@@ -579,19 +595,21 @@
             <div class="containers">
                 <div class="bg-[#FFFFFF] p-[50px] lg:p-[72px] h-fit rounded-[40px] border border-[#D6DDED]">
                     <div>
-                        <div class=''>
+                        <div class='flex justify-center md:justify-start'>
                             <img class="w-[187px] h-[41.02px]" src="./assest/logo.png" alt="logo">
                         </div>
                     </div>
                     <div class="flex flex-col lg:flex-row gap-7 lg:gap-0 justify-between items-start mt-[38px]">
                         <div class="w-full">
-                            <p class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">
+                            <p
+                                class="font-[400] text-[16px] leading-[24px] text-center md:text-left text-[#8987A1] interfont">
                                 Ready to elevate your online presence? Contact us today to discuss your project and
                                 discover how we can bring your vision to life.
                             </p>
                         </div>
                         <div class="w-full flex justify-center lg:justify-end">
-                            <ul class="flex items-center gap-[20px] xl:gap-[48px]">
+                            <ul
+                                class="flex flex-col sm:flex-row items-center justify-center text-center gap-[20px] xl:gap-[48px]">
                                 <li
                                     class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
                                     Home</li>
@@ -614,7 +632,7 @@
                         class="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-end mt-[38px] gap-[30px] md:gap-0">
                         <div class="w-full">
                             <p
-                                class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont flex flex-col md:flex-row items-center gap-3 group">
+                                class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont flex flex-col md:flex-row items-center gap-3 text-center group">
                                 <img class="w-[24px] h-[24px] group-hover:w-[30px] group-hover:h-[30px] transition-all duration-500"
                                     src="/assest/loved.png" alt="loved-icons">
                                 <span>
