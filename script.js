@@ -29,25 +29,35 @@ window.addEventListener('scroll', (e) => {
 });
 
 
-//navber for small screen management
+
+
+
+//small screen navber manage js code
 let navmenu = document.querySelector("#navmenu");
 let smallnav = document.querySelector('#smallnav');
 let openspace = document.querySelector("#openspace");
 let crossiconsnav = document.querySelector("#crossiconsnav");
 
-
 navmenu.addEventListener("click", () => {
     smallnav.style.display = "block";
-    // smallnav.classList.add("shownav");
+    setTimeout(() => {
+        smallnav.classList.add('active');
+    }, 10); // Small delay to ensure the transition works
 });
 
 openspace.addEventListener("click", () => {
-    smallnav.style.display = "none";
-})
+    smallnav.classList.remove('active');
+    setTimeout(() => {
+        smallnav.style.display = "none";
+    }, 300); // Wait for the transition to complete
+});
 
 crossiconsnav.addEventListener("click", () => {
-    smallnav.style.display = "none";
-})
+    smallnav.classList.remove('active');
+    setTimeout(() => {
+        smallnav.style.display = "none";
+    }, 300);
+});
 
 
 window.addEventListener("resize", (e) => {
@@ -56,3 +66,40 @@ window.addEventListener("resize", (e) => {
         smallnav.style.display = "none";
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+// swiper
+var swiper = new Swiper(".workswoper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '#swiper-button-next',
+        prevEl: '#swiper-button-prev',
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+
+        990: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        }
+    }
+});

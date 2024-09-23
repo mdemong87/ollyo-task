@@ -16,6 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom css -->
@@ -37,15 +39,25 @@
                     <nav
                         class="w-[400px] xl:w-[499px] border my-[16px] border border-[#FFFFFF] rounded-[20px] h-[68px] rounded-[20px] bg-[#ffffff] py-[24px] xl:p-[24px]">
                         <ul class="flex items-center justify-between px-10 text-gray-900">
-                            <li class="text-[#252432] font-[700] text-[16px] interfont">Home</li>
-                            <li class="text-[#8987A1] font-[400] text-[16px] interfont">About</li>
-                            <li class="text-[#8987A1] font-[400] text-[16px] interfont">How it works</li>
-                            <li class="text-[#8987A1] font-[400] text-[16px] interfont">Services</li>
+                            <li
+                                class="text-[#252432] font-[700] text-[16px] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
+                                Home</li>
+                            <li
+                                class="text-[#8987A1] font-[400] text-[16px] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
+                                About</li>
+                            <li
+                                class="text-[#8987A1] font-[400] text-[16px] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
+                                How it works</li>
+                            <li
+                                class="text-[#8987A1] font-[400] text-[16px] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
+                                Services</li>
                         </ul>
                     </nav>
                 </div>
                 <div class="hidden lg:flex flex my-[26px] items-center gap-5">
-                    <span class="text-[#8987A1] font-[400] text-[16px]">Sign In</span>
+                    <span
+                        class="text-[#8987A1] font-[400] text-[16px] hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">Sign
+                        In</span>
                     <button
                         class="bg-[#4E47FF] font-[700] text-[16px] py-[8px] px-[20px] text-white w-[132 h-[48px] rounded-[10px]">Sign
                         Up</button>
@@ -248,10 +260,56 @@
 
 
     <!-- slider section start from here -->
-    <div class="border">
+    <div>
         <section>
-            <h2>This is the slider section </h2>
+            <div class="flex justify-center items-center gap-[188px]">
+                <div id="swiper-button-prev"
+                    class="w-[78px] h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] flex justify-center items-center cursor-pointer">
+                    <img class="h-[6px] w-[14px]" src="./assest/leftarrow-work.png" alt="left-arrow-icons">
+                </div>
+                <div class="relative text-center">
+                    <h2 class="font-[700] text-[60px] leading-[72px] text-[#252432]">Check our Work</h2>
+                    <p
+                        class="text-[#8987A1] interfont font-[400] text-[14px] leading-[21px] text-center w-[449px] pt-[32px]">
+                        Take
+                        a look at
+                        some of our recent projects to see how we've helped businesses like yours succeed online.</p>
+                    <img class="text-center -translate-y-14 absolute top-0 colorBurn" src="./assest/worktitlevector.png"
+                        alt="work-vector">
+                </div>
+                <div id="swiper-button-next"
+                    class="w-[78px] h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] flex justify-center items-center cursor-pointer">
+                    <img class="h-[6px] w-[14px]" src="./assest/rightarraw-work.png" alt="right-arrow-icons">
+                </div>
+            </div>
         </section>
+        <div class="bg-[#F5F8FF] h-[518px] mt-[57px]">
+            <!-- Swiper -->
+            <div class="swiper workswoper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="./assest/slider-2.png" alt="slider-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assest/slide-3.png" alt="slider-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assest/slide-1.png" alt="slider-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assest/slider-2.png" alt="slider-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assest/slide-3.png" alt="slider-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assest/slide-1.png" alt="slider-image">
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
     </div>
     <!-- slider sesction end from here -->
 
@@ -371,7 +429,7 @@
                 <h2 class="text-[60px] font-[700] leading-[72px] text-[#252432] text-center lg:text-left">
                     Frequently<br /> Asked<br /> Questions
                 </h2>
-                <img class="absolute hidden lg:block left-0 lg:h-[525px] xl:h-full " src="./assest/faqtube.png"
+                <img class="absolute hidden lg:block left-0 lg:h-[525px] xl:h-full colorBurn" src="./assest/faqtube.png"
                     alt="faq-tube-image">
             </div>
             <div class="w-full">
@@ -483,7 +541,7 @@
         <div class="topbordereremoveral"></div>
 
         <div class="footer-wrper">
-            <img class="w-[235px] hidden xl:block absolute right-[112px] h-[218px] float-right footer-icon-opacity"
+            <img class="w-[235px] hidden xl:block absolute right-[112px] h-[218px] float-right colorBurn"
                 src="./assest/footer-tube-icon.png" alt="footer-star-icons">
             <h1 class="text-center font-[700] text-[60px] leading-[72px] text-[#252432]">Let's Get in Touch
             </h1>
@@ -513,7 +571,7 @@
                     class="w-full bg-[#4E47FF] text-[#FFFFFF] font-[700] text-[16px] leading-[24px] mt-[25px] text-center p-[19px] rounded-[10px]"
                     type="submit">Get in Touch</button>
             </form>
-            <img class="absolute hidden xl:block left-0 -translate-y-80" src="./assest/footer-stat-icons.png"
+            <img class="absolute hidden xl:block left-0 -translate-y-80 colorBurn" src="./assest/footer-stat-icons.png"
                 alt="footer-star-icons">
         </div>
 
@@ -534,11 +592,19 @@
                         </div>
                         <div class="w-full flex justify-center lg:justify-end">
                             <ul class="flex items-center gap-[20px] xl:gap-[48px]">
-                                <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">Home</li>
-                                <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">About</li>
-                                <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">How it works
+                                <li
+                                    class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
+                                    Home</li>
+                                <li
+                                    class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
+                                    About</li>
+                                <li
+                                    class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
+                                    How it works
                                 </li>
-                                <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">Services</li>
+                                <li
+                                    class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
+                                    Services</li>
                             </ul>
                         </div>
                     </div>
@@ -548,8 +614,9 @@
                         class="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-end mt-[38px] gap-[30px] md:gap-0">
                         <div class="w-full">
                             <p
-                                class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont flex flex-col md:flex-row items-center gap-3">
-                                <img class="" src="/assest/loved.png" alt="loved-icons">
+                                class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont flex flex-col md:flex-row items-center gap-3 group">
+                                <img class="w-[24px] h-[24px] group-hover:w-[30px] group-hover:h-[30px] transition-all duration-500"
+                                    src="/assest/loved.png" alt="loved-icons">
                                 <span>
                                     <span>
                                         Made with love by
@@ -562,24 +629,28 @@
                         <div class="w-full flex justify-center md:justify-end">
                             <ul class="flex items-end gap-[20px]">
                                 <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">
-                                    <div class="bg-[#F5F8FF] w-fit p-[5px] rounded-[9px]">
+                                    <div
+                                        class="bg-[#F5F8FF] w-fit p-[5px] rounded-[9px] cursor-pointer hover:bg-[#dbe4f8] transition duration-500">
                                         <img class="w-[36px] h-[36px]" src="./assest/instra.png" alt="what we do icon">
                                     </div>
                                 </li>
                                 <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">
-                                    <div class="bg-[#F5F8FF] w-fit p-[5px] rounded-[9px]">
+                                    <div
+                                        class="bg-[#F5F8FF] w-fit p-[5px] rounded-[9px] cursor-pointer hover:bg-[#dbe4f8] transition duration-500">
                                         <img class="w-[36px] h-[36px]" src="./assest/linkdeind.png"
                                             alt="what we do icon">
                                     </div>
                                 </li>
                                 <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">
-                                    <div class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px]">
+                                    <div
+                                        class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px] cursor-pointer hover:bg-[#dbe4f8] transition duration-500">
                                         <img class="w-[13.86px] h-[16px]" src="./assest/tiktok.png"
                                             alt="what we do icon">
                                     </div>
                                 </li>
                                 <li class="font-[400] text-[16px] leading-[24px] text-[#8987A1] interfont">
-                                    <div class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px]">
+                                    <div
+                                        class="bg-[#F5F8FF] w-fit p-[15px] rounded-[9px] cursor-pointer hover:bg-[#dbe4f8] transition duration-500">
                                         <img class="w-[13.86px] h-[16px]" src="./assest/drimble.png"
                                             alt="what we do icon">
                                     </div>
@@ -607,6 +678,8 @@
 
 
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 

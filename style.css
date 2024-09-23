@@ -16,6 +16,11 @@ section {
     padding: 0 112px;
 }
 
+
+.colorBurn {
+    mix-blend-mode: color-burn;
+}
+
 .containers {
     width: 100%;
     max-width: 1440px;
@@ -58,10 +63,6 @@ section {
     padding-bottom: 112px;
 }
 
-.footer-icon-opacity {
-    opacity: .30;
-}
-
 .footer-wrper {
     padding: 0 112px;
 }
@@ -70,31 +71,50 @@ section {
 
 
 
+/* swiper js */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    border-radius: 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 
 
 
 
+#smallnav {
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    transform: translateX(-100%);
+    /* Hidden outside the screen */
+    opacity: 0;
+    z-index: 999;
+    /* Make sure it's on top */
+}
 
-/* .shownav {
-    animation-name: shownav;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-  
-} */
+#smallnav.active {
+    transform: translateX(0);
+    /* Slide in from the right */
+    opacity: 1;
+}
 
-
-/* animation here */
-/* @keyframes shownav {
-    0% {
-        display: none;
-    }
-
-    100% {
-        display: block;
-    }
-} */
 
 
 
@@ -102,15 +122,15 @@ section {
 
     section,
     header {
-        padding: 0 80px;
+        padding: 0 72px;
     }
 
     .footer-wrper {
-        padding: 0 80px;
+        padding: 0 72px;
     }
 
     .footer {
-        padding-bottom: 80px;
+        padding-bottom: 72px;
     }
 }
 
@@ -121,15 +141,15 @@ section {
 
     section,
     header {
-        padding: 0 60px;
+        padding: 0 44px;
     }
 
     .footer-wrper {
-        padding: 0 60px;
+        padding: 0 44px;
     }
 
     .footer {
-        padding-bottom: 60px;
+        padding-bottom: 44px;
     }
 }
 
@@ -139,14 +159,14 @@ section {
 
     section,
     header {
-        padding: 0 40px;
+        padding: 0 31px;
     }
 
     .footer-wrper {
-        padding: 0 40px;
+        padding: 0 31px;
     }
 
     .footer {
-        padding-bottom: 40px;
+        padding-bottom: 31px;
     }
 }
