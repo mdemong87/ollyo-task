@@ -59,7 +59,7 @@
                         class="text-[#8987A1] font-[400] text-[16px] hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">Sign
                         In</span>
                     <button
-                        class="bg-[#4E47FF] font-[700] text-[16px] py-[8px] px-[20px] text-white w-[132 h-[48px] rounded-[10px]">Sign
+                        class="bg-[#4E47FF] font-[700] text-[16px] py-[8px] px-[20px] text-white w-[132 h-[48px] rounded-[10px] hover:scale-105 transition-all duration-300">Sign
                         Up</button>
                 </div>
                 <div id="navmenu" class="lg:hidden w-fit  my-[26px]">
@@ -268,8 +268,8 @@
         <section>
             <div class="flex justify-center items-center gap-[20px] md:gap-[70px] lg:gap-[188px] w-full h-fit relative">
                 <div id="swiper-button-prev"
-                    class="hidden w-[55px] h-[55px] md:w-[78px] md:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] md:flex justify-center items-center cursor-pointer">
-                    <img class="h-[6px] w-[14px]" src="./assest/leftarrow-work.png" alt="left-arrow-icons">
+                    class="hidden w-[55px] h-[55px] md:w-[78px] md:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] md:flex justify-center items-center cursor-pointer leftbtn">
+                    <img class="h-[6px] w-[14px] icon" src="./assest/leftarrow-work.png" alt="left-arrow-icons">
                 </div>
                 <div class="text-center">
                     <h2
@@ -283,8 +283,8 @@
                     </p>
                 </div>
                 <div id="swiper-button-next"
-                    class="hidden md:flex w-[55px] h-[55px] md:w-[78px] md:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] justify-center items-center cursor-pointer">
-                    <img class="h-[6px] w-[14px]" src="./assest/rightarraw-work.png" alt="right-arrow-icons">
+                    class="hidden md:flex w-[55px] h-[55px] md:w-[78px] md:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] justify-center items-center cursor-pointer rightbtn">
+                    <img class="h-[6px] w-[14px] icon" src="./assest/rightarraw-work.png" alt="right-arrow-icons">
                 </div>
 
                 <div class="hidden md:flex justify-center absolute top-0">
@@ -326,7 +326,7 @@
 
 
     <!-- review section start from here -->
-    <section class="my-[96px]">
+    <section class="my-[50px] md:my-[76px] lg:my-[96px]">
         <div class="flex justify-center items-center">
             <div
                 class="bg-[#FFFFFF] flex flex-col md:flex-row items-center gap-3  border border-[#E4EAF8] rounded-[22px] p-[23px]">
@@ -413,14 +413,14 @@
                 </div>
 
                 <div
-                    class="bg-[#F5F8FF] mx-[25px] mb-[25px] rounded-[10px] px-[40px] py-[25px] flex justify-between items-center">
+                    class="bg-[#F5F8FF] mx-[25px] mb-[25px] rounded-[10px] px-[40px] py-[25px] flex justify-between items-center cursor-pointer priceBTnWraer">
                     <div class="flex items-end gap-2">
                         <h2 class="text-[#252432] text-[60px] interfont font-[700] leading-[72px]">$3,250</h2>
                         <span
                             class="text-[#8987A1] -translate-y-2 text-[20px] font-[400] interfont leading-[30px]">/mo</span>
                     </div>
                     <div>
-                        <img src="./assest/pricingarrow.png" class="w-[24px] h-[24px]" alt="pricing-arrow">
+                        <img src="./assest/pricingarrow.png" class="w-[24px] h-[24px] price-Icon" alt="pricing-arrow">
                     </div>
                 </div>
 
@@ -435,7 +435,7 @@
 
 
     <!-- faq section start from here -->
-    <section class="faq-section h-fit mt-[174px]">
+    <section class="faq-section h-fit mt-[96px] md:mt-[112px] mt-[174px]">
 
         <div class="flex flex-col lg:flex-row items-center gap-[30px] justify-between">
             <div class="w-full flex justify-center items-center">
@@ -451,10 +451,12 @@
                     <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
                         onclick="toggleFaq(0)">
                         How can I contact Inkyy Team?
+
                         <svg id="icon-0"
                             class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4">
+                            </path>
                             <!-- Plus icon -->
                         </svg>
                     </h3>
@@ -476,7 +478,8 @@
                             </path> <!-- Plus icon -->
                         </svg>
                     </h3>
-                    <div class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont">
+                    <div
+                        class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont transform transition-all duration-300">
                         Shipping typically takes 5-7 business days depending on your location.
                     </div>
                 </div>
@@ -550,7 +553,7 @@
 
 
     <!-- footer section start from here -->
-    <footer class="footer mt-[208px]">
+    <footer class="footer mt-[96px] md:mt-[106px] lg:mt-[208px]">
 
         <div class="topbordereremoveral"></div>
 
@@ -561,7 +564,7 @@
                 class="text-center font-[700] text-[40px] sm:text-[46xp] md:text-[52px] lg:text-[60px] leading-[72px] text-[#252432]">
                 Let's Get in Touch
             </h1>
-            <form action="#" method="post" class="w-full lg:w-[696px] mt-[71px] m-auto">
+            <div class="w-full lg:w-[696px] mt-[71px] m-auto">
                 <div class="form-group w-full flex flex-col">
                     <label for="email"
                         class="text-[#252432] interfont text-[18px] font-[700] leading-[21.8px] pb-[10px]">Email:</label>
@@ -584,14 +587,14 @@
                         placeholder="Message" required></textarea>
                 </div>
                 <button
-                    class="w-full bg-[#4E47FF] text-[#FFFFFF] font-[700] text-[16px] leading-[24px] mt-[25px] text-center p-[19px] rounded-[10px]"
+                    class="w-full bg-[#4E47FF] text-[#FFFFFF] font-[700] text-[16px] leading-[24px] mt-[25px] text-center p-[19px] rounded-[10px] hover:scale-105 transition-all duration-500"
                     type="submit">Get in Touch</button>
-            </form>
+            </div>
             <img class="absolute hidden xl:block left-0 -translate-y-80 colorBurn" src="./assest/footer-stat-icons.png"
                 alt="footer-star-icons">
         </div>
 
-        <div class="footer-wrper mt-[156px]">
+        <div class="footer-wrper mt-[96px] md:mt-[122px] lg:mt-[156px]">
             <div class="containers">
                 <div class="bg-[#FFFFFF] p-[50px] lg:p-[72px] h-fit rounded-[40px] border border-[#D6DDED]">
                     <div>

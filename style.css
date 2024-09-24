@@ -6,6 +6,7 @@ body {
     background: #F5F8FF;
     font-family: "Raleway", sans-serif;
     overflow-x: hidden;
+    user-select: none;
 }
 
 header {
@@ -72,6 +73,16 @@ section {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* swiper js */
 .swiper {
     width: 100%;
@@ -101,7 +112,79 @@ section {
 
 
 
+/* left and right btn  */
+.leftbtn:hover {
+    transition: .5s;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
 
+.rightbtn:hover {
+    transition: .5s;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.leftbtn:hover .icon {
+    transform: translateX(10px);
+    height: 9px;
+    width: 20px;
+    opacity: 0;
+    animation-name: leftani;
+    animation-duration: .90s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.rightbtn:hover .icon {
+    transform: translateX(-10px);
+    height: 9px;
+    width: 20px;
+    opacity: 0;
+    animation-name: rightani;
+    animation-duration: .90s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes leftani {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes rightani {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+/* priceing css code here */
+.priceBTnWraer:hover {
+    transition: all .90s;
+    background: #e6ebf5;
+}
+
+.priceBTnWraer:hover .price-Icon {
+    transform: translateX(-15px);
+    height: 30px;
+    width: 40px;
+    opacity: 0;
+    animation-name: rightani;
+    animation-duration: .90s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+/* small screen css code navber */
 #smallnav {
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     transform: translateX(-100%);

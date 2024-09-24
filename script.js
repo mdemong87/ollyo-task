@@ -13,6 +13,9 @@ function toggleFaq(index) {
 
 
 
+
+
+
 //header sectinn js code
 let header = document.querySelector("#header");
 
