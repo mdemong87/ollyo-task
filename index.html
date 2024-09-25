@@ -42,7 +42,8 @@
                             class="flex items-center justify-between xl:px-10  lg:gap-[30px] xl:gap-[48px] text-gray-900">
                             <li
                                 class="text-[#252432] font-[700] text-[16px] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
-                                Home</li>
+                                Home
+                            </li>
                             <li
                                 class="text-[#8987A1] font-[400] text-[16px] interfont hover:text-[#252432] hover:font-[700] transition-all duration-500 cursor-pointer">
                                 About</li>
@@ -95,18 +96,19 @@
                     </div>
                     <div>
                         <ul class="flex flex-col gap-2 items-start mt-[60px] text-gray-900">
-                            <li
-                                class="text-[#252432] font-[700] text-[16px] p-[15px] bg-[#F5F8FF] w-full rounded-md interfont cursor-pointer">
-                                Home</li>
-                            <li
-                                class="text-[#8987A1] font-[400] text-[16px] p-[15px] interfont w-full transition-all duration-500 cursor-pointer hover:bg-[#F5F8FF] rounded-md hover:text-[#252432] hover:font-[700]">
-                                About</li>
-                            <li
-                                class="text-[#8987A1] font-[400] text-[16px] p-[15px] interfont w-full transition-all duration-500 cursor-pointer hover:bg-[#F5F8FF] rounded-md hover:text-[#252432] hover:font-[700]">
-                                How it works</li>
-                            <li
-                                class="text-[#8987A1] font-[400] text-[16px] p-[15px] interfont w-full transition-all cursor-pointer duration-500  hover:bg-[#F5F8FF] rounded-md hover:text-[#252432] hover:font-[700]">
-                                Services</li>
+
+
+                            <a class="text-[#252432] font-[700] text-[16px] p-[15px] bg-[#F5F8FF] w-full rounded-md interfont cursor-pointer"
+                                href="/">Home</a>
+
+                            <a class="text-[#8987A1] font-[400] text-[16px] p-[15px] interfont w-full transition-all duration-500 cursor-pointer hover:bg-[#F5F8FF] rounded-md hover:text-[#252432] hover:font-[700]"
+                                href="/">About</a>
+
+                            <a class="text-[#8987A1] font-[400] text-[16px] p-[15px] interfont w-full transition-all duration-500 cursor-pointer hover:bg-[#F5F8FF] rounded-md hover:text-[#252432] hover:font-[700]"
+                                href="/">How it works</a>
+
+                            <a class="text-[#8987A1] font-[400] text-[16px] p-[15px] interfont w-full transition-all cursor-pointer duration-500  hover:bg-[#F5F8FF] rounded-md hover:text-[#252432] hover:font-[700]"
+                                href="/">Services</a>
                         </ul>
                     </div>
                 </div>
@@ -130,7 +132,7 @@
                 for Webflow Agency</h1>
 
             <button
-                class="bg-[#252432] w-fit text-[#FFFFFF] mt-[44px] py-[10px] px-[30px] rounded-[10px] text-[16px] text-center font-[700]">Get
+                class="bg-[#252432] w-fit text-[#FFFFFF] mt-[44px] py-[10px] px-[30px] rounded-[10px] text-[16px] text-center font-[700] hover:scale-105 hover:shadow-lg transition-all duration-500">Get
                 in Touch</button>
         </div>
     </section>
@@ -268,9 +270,9 @@
     <div class="mt-[60px] md:mt[76px] lg:mt-[130px]">
         <section>
             <div
-                class="flex justify-center items-center gap-[20px] md:gap-[70px] lag:gap-[155px] xl:gap-[188px] w-full h-fit relative">
+                class="flex justify-center items-center gap-[20px] md:gap-[70px] lg:gap-[158px] xl:gap-[188px] w-full h-fit relative">
                 <div id="swiper-button-prev"
-                    class="hidden w-[55px] h-[55px] md:w-[78px] md:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] md:flex justify-center items-center cursor-pointer leftbtn">
+                    class="hidden w-[55px] h-[55px] md:w-[70px] md:h-[70px]  lg:w-[78px] lg:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] md:flex justify-center items-center cursor-pointer leftbtn">
                     <img class="h-[6px] w-[14px] icon" src="./assest/leftarrow-work.png" alt="left-arrow-icons">
                 </div>
                 <div class="text-center">
@@ -285,12 +287,12 @@
                     </p>
                 </div>
                 <div id="swiper-button-next"
-                    class="hidden md:flex w-[55px] h-[55px] md:w-[78px] md:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] justify-center items-center cursor-pointer rightbtn">
+                    class="hidden md:flex w-[55px] h-[55px] md:w-[70px] md:h-[70px] lg:w-[78px] lg:h-[78px] rounded-full border border-[#FFFFFF] bg-[#FFFFFF] justify-center items-center cursor-pointer rightbtn">
                     <img class="h-[6px] w-[14px] icon" src="./assest/rightarraw-work.png" alt="right-arrow-icons">
                 </div>
 
-                <div class="flex justify-center absolute top-0">
-                    <img class="md:-translate-y-14 lg:-translate-y-16 xl:-translate-y-28 colorBurn object-cover w-[799px] h-[500px] md:h-[750px] lg:h-[841px]"
+                <div class=" hidden lg:flex justify-center absolute top-0">
+                    <img class="md:-translate-y-14 lg:-translate-y-16 xl:-translate-y-28 colorBurn object-cover md:w-[699px] xl:w-[799px] h-[500px] md:h-[750px] lg:h-[841px]"
                         src="./assest/worktitlevector.png" alt="work-vector">
                 </div>
             </div>
@@ -366,7 +368,7 @@
                                 Let's Schedule <br /> a
                                 Meeting</h3>
                             <button
-                                class="bg-[#4E47FF] mt-[29px] text-[#FFFFFF] font-[700] text-[16px] leading-[24px] text-center w-full rounded-[10px] py-[18px]">Schedule
+                                class="bg-[#4E47FF] mt-[29px] text-[#FFFFFF] font-[700] text-[16px] leading-[24px] text-center w-full rounded-[10px] py-[18px] hover:scale-105 transition-all duration-500">Schedule
                                 Meeting</button>
                         </div>
                     </div>
@@ -443,108 +445,123 @@
     <!-- faq section start from here -->
     <section class="faq-section h-fit mt-[60px] sm:mt[76px] md:mt-[112px] lg:mt-[174px]">
 
-        <div class="flex flex-col lg:flex-row items-center gap-[30px] justify-between">
-            <div class="w-full flex justify-center items-center">
-                <h2
-                    class="text-[40px] sm:text-[46xp] md:text-[52px] lg:text-[60px] font-[700] leading-[72px] text-[#252432] text-center lg:text-left">
-                    Frequently<br /> Asked<br /> Questions
-                </h2>
-                <img class="absolute hidden lg:block left-0 lg:h-[525px] xl:h-full colorBurn" src="./assest/faqtube.png"
-                    alt="faq-tube-image">
+        <div class="containers">
+            <div class="flex flex-col lg:flex-row items-center gap-[30px] justify-between">
+                <div class="w-full flex justify-center items-center">
+                    <h2
+                        class="text-[40px] sm:text-[46xp] md:text-[52px] lg:text-[60px] font-[700] leading-[72px] text-[#252432] text-center lg:text-left">
+                        Frequently<br /> Asked<br /> Questions
+                    </h2>
+                    <img class="absolute hidden lg:block left-0 lg:h-[525px] xl:h-full colorBurn"
+                        src="./assest/faqtube.png" alt="faq-tube-image">
+                </div>
+                <div class="w-full">
+                    <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] rounded-[10px]">
+                        <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
+                            onclick="toggleFaq(0)">
+                            How can I contact Inkyy Team?
+
+                            <svg id="icon-0"
+                                class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4">
+                                </path>
+                                <!-- Plus icon -->
+                            </svg>
+                        </h3>
+                        <div class="faq-answer mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont">
+                            You can reach us through our contact form on our website or by emailing us at <span
+                                class="font-[700] text-[#252432]">hello@inkyy.com</span> We typically respond within 24
+                            hours.
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] mt-[16px] rounded-[10px]">
+                        <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
+                            onclick="toggleFaq(1)">
+                            What services do you offer?
+                            <svg id="icon-1"
+                                class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4">
+                                </path> <!-- Plus icon -->
+                            </svg>
+                        </h3>
+                        <div
+                            class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont transition-all duration-300">
+                            Shipping typically takes 5-7 business days depending on your location.
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] mt-[16px] rounded-[10px]">
+                        <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
+                            onclick="toggleFaq(2)">
+                            Do you provide website maintenance services?
+                            <svg id="icon-2"
+                                class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4">
+                                </path> <!-- Plus icon -->
+                            </svg>
+                        </h3>
+                        <div
+                            class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont">
+                            Yes, we offer international shipping to select countries. Please contact us for more
+                            details.
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] mt-[16px] rounded-[10px]">
+                        <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
+                            onclick="toggleFaq(3)">
+                            How long does it take to design and develop a website?
+                            <svg id="icon-3"
+                                class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4">
+                                </path> <!-- Plus icon -->
+                            </svg>
+                        </h3>
+                        <div
+                            class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont">
+                            We accept major credit cards, PayPal, and other digital payment methods.
+                        </div>
+                    </div>
+
+
+                    <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] mt-[16px] rounded-[10px]">
+                        <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
+                            onclick="toggleFaq(4)">
+                            Do you require a deposit for projects?
+                            <svg id="icon-4"
+                                class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4">
+                                </path> <!-- Plus icon -->
+                            </svg>
+                        </h3>
+                        <div
+                            class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont">
+                            We accept major credit cards, PayPal, and other digital payment methods.
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
             </div>
-            <div class="w-full">
-                <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] rounded-[10px]">
-                    <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
-                        onclick="toggleFaq(0)">
-                        How can I contact Inkyy Team?
-
-                        <svg id="icon-0"
-                            class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4">
-                            </path>
-                            <!-- Plus icon -->
-                        </svg>
-                    </h3>
-                    <div class="faq-answer mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont">
-                        You can reach us through our contact form on our website or by emailing us at <span
-                            class="font-[700] text-[#252432]">hello@inkyy.com</span> We typically respond within 24
-                        hours.
-                    </div>
-                </div>
-
-                <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] mt-[16px] rounded-[10px]">
-                    <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
-                        onclick="toggleFaq(1)">
-                        What services do you offer?
-                        <svg id="icon-1"
-                            class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
-                            </path> <!-- Plus icon -->
-                        </svg>
-                    </h3>
-                    <div
-                        class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont transform transition-all duration-300">
-                        Shipping typically takes 5-7 business days depending on your location.
-                    </div>
-                </div>
-
-                <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] mt-[16px] rounded-[10px]">
-                    <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
-                        onclick="toggleFaq(2)">
-                        Do you provide website maintenance services?
-                        <svg id="icon-2"
-                            class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
-                            </path> <!-- Plus icon -->
-                        </svg>
-                    </h3>
-                    <div class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont">
-                        Yes, we offer international shipping to select countries. Please contact us for more details.
-                    </div>
-                </div>
-
-                <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] mt-[16px] rounded-[10px]">
-                    <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
-                        onclick="toggleFaq(3)">
-                        How long does it take to design and develop a website?
-                        <svg id="icon-3"
-                            class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
-                            </path> <!-- Plus icon -->
-                        </svg>
-                    </h3>
-                    <div class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont">
-                        We accept major credit cards, PayPal, and other digital payment methods.
-                    </div>
-                </div>
-
-
-                <div class="faq-item bg-[#FFFFFF99] px-[24px] md:px-[30px] py-[24px] mt-[16px] rounded-[10px]">
-                    <h3 class="text-[#252432] font-[700] text-[18px] leading-[21px] cursor-pointer flex justify-between items-center"
-                        onclick="toggleFaq(4)">
-                        Do you require a deposit for projects?
-                        <svg id="icon-4"
-                            class="w-[20px] h-[20px] text-[#252432] transform transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
-                            </path> <!-- Plus icon -->
-                        </svg>
-                    </h3>
-                    <div class="faq-answer hidden mt-5 text-[#8987A1] font-[400] text-[16px] leading-[24px] interfont">
-                        We accept major credit cards, PayPal, and other digital payment methods.
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-
         </div>
     </section>
     <!-- faq section end from here -->
