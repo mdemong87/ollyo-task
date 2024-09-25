@@ -73,6 +73,27 @@ section {
 
 
 
+/* faq section css code */
+
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .3s ease-out, opacity .3s ease-out, margin-top .3s ease-out;
+    margin-top: 0px;
+}
+
+.faq-answer.active {
+    max-height: 200px;
+    /* Set a height large enough for your content */
+    opacity: 1;
+    margin-top: 20px;
+    transition: max-height 2s ease-out, opacity 1s ease-out, margin-top .8s ease-out;
+}
+
+
+
 
 
 
@@ -180,6 +201,15 @@ section {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+
+
+
+
+
+
+
+
+
 
 
 
